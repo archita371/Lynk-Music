@@ -1,0 +1,22 @@
+.controlduration{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 3px;
+    font-size: 12px;
+
+}
+.control-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.playpause{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.none{
+    display: none;
+}

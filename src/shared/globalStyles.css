@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500&display=swap');
+
+
+.screen-container {
+    width: calc(100% - 100px);
+    height: 100%;
+    background-color: #000000;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.flex{
+    display: flex;
+}

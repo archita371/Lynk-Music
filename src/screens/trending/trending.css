@@ -1,0 +1,82 @@
+:root{
+    --gridcol:repeat(30,280px);
+}
+
+
+.trending{
+    height: 100%;
+    overflow-y: auto;
+    background-color: #ff0000;
+    background-image:  repeating-radial-gradient( circle at -25px -25px, transparent 0, rgb(0, 0, 0) 40px ), repeating-linear-gradient( #070707e8, #000000 );
+
+}
+
+
+.library-body1{
+    width: 94%;
+    height: 90%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns:var(--gridcol);
+    overflow-x: auto;
+    }
+
+.playlist-card1
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    background-size: cover;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.name1{
+    padding-top: 10px;
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tracks1 {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(119, 119, 119);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.playlist-fade1{
+    display: none;
+    position: relative;
+    top: 155px;
+    left: 12px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+.playlist-card1:hover{
+    box-shadow: inset 2px -30px 50px rgb(0, 0, 0);
+    transform: scale(1.05);
+
+    .playlist-fade1{
+        display: block;
+        transition: all 0.2s ease;
+    }
+    .playlist-fade1:hover{
+        transform: scale(1.1);
+    }
+}
+
+.trending-title{
+    font-size: 50px;
+    padding-left: 3%;
+    padding-top: 3%;
+    margin-bottom: -1.7%;
+}

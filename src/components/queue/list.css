@@ -1,0 +1,186 @@
+.listItem{
+    height: 60px;
+    width: 95%;
+    background-color: rgba(255, 0, 0, 0.096);
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+.controls{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    display: none;
+}
+.listItem:hover{
+    .controls{
+        display: grid;
+    }
+    .duration{
+        display: none;
+    }
+    background-color: rgba(255, 0, 0, 0.539);
+    cursor: pointer;
+}
+.duration{
+    font-size: 18px;
+}
+.duration span{
+    font-size: 16px;
+}
+._1:hover,._2:hover,._3:hover,._4:hover{
+    color: red;
+}
+
+.track-image{
+    width: 30px;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+.listname{
+    align-items: center;
+    width: 90%;
+    height: 60px;
+}
+.index{
+    width: 30px;
+}
+
+.mymodal {
+    width: 500px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    background: #ffffff;
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+  }
+  
+  .myoverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }
+  
+  .modalHead {
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .addHead {
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+  }
+
+  .inputNew label{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    color: rgb(71, 71, 71);
+  }
+
+  .inputNew input {
+    width: 79%;
+    height: 30px;
+    outline: none;
+    border: 2px solid rgba(0, 255, 0, 0.377);
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: whitesmoke;
+  }
+  .inputNew input:hover{
+    border: 2px solid rgb(0, 255, 0);
+  }
+  .inputNew input:focus{
+    border: 2px solid rgb(0, 255, 0);
+  }
+
+  .existing{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: rgb(70, 70, 70);
+    margin-bottom: 10px;
+  }
+  .btn-icon-1{
+    cursor: pointer;
+    color: rgb(68, 67, 67);
+  }
+  .listlist{
+    background-color: rgba(224, 224, 224, 0.618);
+    margin-bottom: 4px;
+    width: 98%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 10px;
+    border-radius: 4px;
+    color: black;
+    transition: all ease;
+    
+  }
+  .listlist:hover{
+    background-color: rgba(202, 202, 202, 0.717);
+    cursor: pointer;
+    .pimage{
+      transform: scale(1.1);
+    }
+    
+  }
+  .btnbtnbtn{
+    background-color: rgb(0, 207, 0) !important;
+    color: #ffffff !important;
+    margin-left: 10px !important;
+    border-radius: 2px !important;
+  }
+  .btnbtnbtn:hover{
+    background-color: rgb(4, 194, 4) !important;
+  }
+  .list69{
+    height: 70%;
+    overflow: scroll;
+  }
+  .list69::-webkit-scrollbar{
+    display: none;
+  }
+  .listlist img {
+    width: 35px;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 4px rgb(136, 136, 136);
+  }
+  .isSelected{
+    background-color: rgba(255, 0, 0, 0.694);
+  }

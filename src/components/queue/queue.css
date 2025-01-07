@@ -1,0 +1,24 @@
+.list-track {
+    overflow-y: auto;
+
+    height: 71vh;
+    padding-left: 8%;
+    
+}
+
+.list-track::-webkit-scrollbar {
+    display: none;
+}
+
+.heading{
+    font-size: 80px;
+    font-weight: 700;
+    padding-top: 8%;
+    padding-left: 8%;
+    padding-bottom: 2%;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-shadow: inset 0 -50px 75px rgb(0, 0, 0);
+    text-overflow: ellipsis;
+}
